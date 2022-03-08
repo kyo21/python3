@@ -21,13 +21,30 @@ import numpy as np
 # for i,j in zip_list:
 #     print(i)
 
-x = [1., 0., 1., 1.]
-w = [.3,.2,1.,.5]
-x_vect, w_vect = np.array(x), np.array(w)
+# x = [1., 0., 1., 1.]
+# w = [.3,.2,1.,.5]
+# x_vect, w_vect = np.array(x), np.array(w)
 
-z = (x_vect.transpose().dot(w_vect))
-y = (x_vect.dot(w_vect))
-print(z, ' ', y)
+# z = (x_vect.transpose().dot(w_vect))
+# y = (x_vect.dot(w_vect))
+# print(z, ' ', y)
 
-def entropy_loss():
+# def entropy_loss():
+
+class hitung:
+
+    def __init__ (self):
+      
+        self.z = 0
     
+    def tambah(self, x, y):
+        self.z = x+y
+        return self.z
+
+    def cetak(self):
+        print('hasil nya adalah {}'.format(self.z))
+
+
+h = hitung()
+h.tambah(4,3)
+h.cetak()
